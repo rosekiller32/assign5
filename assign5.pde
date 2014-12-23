@@ -181,7 +181,9 @@ void fullreset(){
   allBrick= new Brick[50];
   counter=allBrick.length;
   for (int j=0; j<allBrick.length; j++) {
-    allBrick[j]=new Brick((width/2-180)+(j%10*40), 40+(j/10*40), 30, 30, 0.1);
+    float x=j%10;
+    float y=j/10;
+    allBrick[j]=new Brick((width/2-180)+40*(int)x, 40+40*(int)y, 30, 30, 0.03);
   }
   myBall= new Ball[1];
   for (int i=0; i<myBall.length; i++) {
