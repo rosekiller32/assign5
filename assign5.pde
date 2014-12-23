@@ -28,13 +28,13 @@ void setup() {
   for (int j=0; j<allBrick.length; j++) {
     float x=j%10;
     float y=j/10;
-     allBrick[j]=new Brick((width/2-180)+40*(int)x, 40+40*(int)y, 30, 30, 0.05);
+     allBrick[j]=new Brick((width/2-180)+40*(int)x, 40+40*(int)y, 30, 30, 0.03);
   }
   myBall= new Ball[1];
   for (int i=0; i<myBall.length; i++) {
     myBall[i] = new Ball(0, 0, 15);
   }
-  life=3;
+  life=2;
   mybar= new Bar(100);
 }
 
