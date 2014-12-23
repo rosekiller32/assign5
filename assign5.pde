@@ -23,7 +23,7 @@ void setup() {
   allBrick= new Brick[50];
   counter=allBrick.length;
   for (int j=0; j<allBrick.length; j++) {
-    allBrick[j]=new Brick(((float)width/2-180)+((float)j%10*40), 40+((float)j/10*40), 30, 30, 0.05);
+    allBrick[j]=new Brick(((int)(float)width/2-180)+((int)(float)j%10*40), 40+((int)(float)j/10*40), 30, 30, 0.05);
   }
   myBall= new Ball[1];
   for (int i=0; i<myBall.length; i++) {
