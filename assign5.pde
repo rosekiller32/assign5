@@ -196,7 +196,7 @@ void fullreset(){
 
 
 void mousePressed() {
-  if (status ==GAME_PLAYING && myBall[0].xSpeed==0 && myBall[0].ySpeed==0) {
+  if (status ==GAME_PLAYING && myBall[0].xSpeed==0 && myBall[0].ySpeed==0 && mouseButton == RIGHT) {
     myBall[0].xSpeed=random(-5, 5);
     myBall[0].ySpeed=-5;
     r=0;
