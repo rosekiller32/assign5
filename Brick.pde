@@ -15,7 +15,7 @@ class Brick {
   void display(){
     fill(0,255,0);
     rectMode(CENTER); 
-    rect(x,y,length,thickness);  
+    rect((float)x,(float)y,length,thickness);  
   }
   
   
