@@ -10,9 +10,9 @@ class Brick {
   //methods
   void move() {
       y+=ySpeed;
-      //if(y+thickness/2>height){
-          //status=GAME_LOSE;
-      //}
+      if(y+thickness/2>height&&1800>y+thickness/2){
+          status=GAME_LOSE;
+      }
   }
   
   void display(){
