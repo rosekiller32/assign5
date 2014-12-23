@@ -97,7 +97,8 @@ void draw() {
     printText(20);
     text("Press Enter to Restart", width/2, 280);
     r=-1;
-    counter=allBrick.length;      
+    counter=allBrick.length; 
+    statusCtrl();
     break;
     
   case GAME_DIE:
