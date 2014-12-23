@@ -189,7 +189,7 @@ void fullreset(){
   for (int i=0; i<myBall.length; i++) {
     myBall[i] = new Ball(0, 0, 15);
   }
-  life=3;
+  life=2;
   mybar= new Bar(100);
 }
 
