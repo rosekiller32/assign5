@@ -15,13 +15,13 @@ class Brick {
   void display(){
     fill(0,255,0);
     rectMode(CENTER); 
-    rect((float)x,(float)y,length,thickness);  
+    rect(x,y,length,thickness);  
   }
   
   
   //contructor
   
-    Brick(float x,float y,float length,float thickness,float ySpeed){
+    Brick(int x,int y,float length,float thickness,float ySpeed){
       this.x=x;
       this.y=y;
       this.length=length;
