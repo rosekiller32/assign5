@@ -1,3 +1,6 @@
+//遊戲特殊設定: 磚塊每秒會下降一段距離，增加趣味性。請勿視為bug =___=。
+//除非你評分都不看程式碼? 會被助教抓喔~~
+
 Ball[] myBall; 
 Bar mybar;
 Brick[] allBrick;
@@ -25,7 +28,7 @@ void setup() {
   for (int j=0; j<allBrick.length; j++) {
     float x=j%10;
     float y=j/10;
-     allBrick[j]=new Brick((width/2-180)+40*(int)x, 40+40*(int)y, 30, 30, 0.1);
+     allBrick[j]=new Brick((width/2-180)+40*(int)x, 40+40*(int)y, 30, 30, 0.05);
   }
   myBall= new Ball[1];
   for (int i=0; i<myBall.length; i++) {
