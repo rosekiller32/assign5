@@ -21,7 +21,7 @@ class Brick {
   
   //contructor
   
-    Brick(int x,int y,float length,float thickness,float ySpeed){
+    Brick(float x,float y,float length,float thickness,float ySpeed){
       this.x=x;
       this.y=y;
       this.length=length;
